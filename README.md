@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Welcome to the Best Hospital App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Visit Now](https://medi-point.web.app/).
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+### Eye Catching UI
+### Separate User and Admin Dashboard
+### Admin can easily update / delete Slots
+### Paypal Payment Gateway Integrated
+### Better User Experience
 
 ### `npm start`
 
