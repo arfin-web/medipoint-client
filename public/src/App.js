@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
-import Addappoinments from './Pages/Addappointments/Addappointments';
-import Allappointments from './Pages/Allappointments/Allappointments';
+import Addproduct from './Pages/Addproduct/Addproduct';
+import Allproducts from './Pages/Allproducts/Allproducts';
 import Signin from './Pages/Signin/Signin';
 import Signup from './Pages/Signup/Signup';
 import About from './Pages/About/About';
@@ -17,11 +17,9 @@ import Privateroute from './Privateroute/Privateroute';
 import Adminroute from './Adminroute/Adminroute';
 import Makereview from './Pages/Makereview/Makereview';
 import Footer from './Pages/Footer/Footer';
-import Manageappointments from './Pages/Manageappointments/Manageappointments';
+import Manageproduct from './Pages/Manageproduct/Manageproduct';
 import Notfound from './Pages/Notfound/Notfound';
 import Pay from './Pages/Pay/Pay';
-import Allappointments2 from './Pages/Allappointments2/Allappointments2';
-import Updateslot from './Pages/Updateslot/Updateslot'
 
 function App() {
   return (
@@ -48,17 +46,11 @@ function App() {
             <Route path="/signup">
               <Signup></Signup>
             </Route>
-            <Route exact path="/slots2">
-              <Allappointments2></Allappointments2>
+            <Route exact path="/toys">
+              <Allproducts></Allproducts>
             </Route>
-            <Route exact path="/slots">
-              <Allappointments></Allappointments>
-            </Route>
-            <Privateroute path="/slots/:id">
+            <Privateroute path="/toys/:id">
               <Purchase></Purchase>
-            </Privateroute>
-            <Privateroute path="/appointment/:id">
-              <Updateslot></Updateslot>
             </Privateroute>
             <Privateroute path="/myorders">
               <Myorders></Myorders>
@@ -72,11 +64,11 @@ function App() {
             <Adminroute path="/makeadmin">
               <Makeadmin></Makeadmin>
             </Adminroute>
-            <Adminroute path="/addappoinments">
-              <Addappoinments></Addappoinments>
+            <Adminroute path="/addproduct">
+              <Addproduct></Addproduct>
             </Adminroute>
-            <Adminroute path="/Manageappointments">
-              <Manageappointments></Manageappointments>
+            <Adminroute path="/manageproduct">
+              <Manageproduct></Manageproduct>
             </Adminroute>
             <Adminroute path="/orders">
               <Orders></Orders>

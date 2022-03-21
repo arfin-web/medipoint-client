@@ -1,0 +1,13 @@
+.about-container {
+    height: 80vh;
+    background-image: url('https://wallpaperaccess.com/full/6890234.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-title {
+    font-size: 65px;
+}
