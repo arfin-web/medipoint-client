@@ -5,7 +5,7 @@ const Slots = () => {
     const [slots, setSlots] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointments')
+        fetch('https://infinite-anchorage-79745.herokuapp.com/appointments')
             .then(res => res.json())
             .then(data => setSlots(data))
     }, [])

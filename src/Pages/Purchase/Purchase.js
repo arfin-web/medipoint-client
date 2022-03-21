@@ -9,7 +9,7 @@ const Purchase = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `http://localhost:5000/appointments/${id}`;
+        const url = `https://infinite-anchorage-79745.herokuapp.com/appointments/${id}`;
 
         fetch(url)
             .then(res => res.json())
@@ -39,7 +39,7 @@ const Purchase = () => {
 
         const myOrders = { name, description, time, image, price, userName, email, userPhone, status };
 
-        fetch('http://localhost:5000/myappointments', {
+        fetch('https://infinite-anchorage-79745.herokuapp.com/myappointments', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

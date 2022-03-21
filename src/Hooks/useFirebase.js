@@ -94,7 +94,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://infinite-anchorage-79745.herokuapp.com/users', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

@@ -18,7 +18,7 @@ const Addappointments = () => {
         const newAppointments = { name, description, time, price, image };
 
 
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://infinite-anchorage-79745.herokuapp.com/appointments', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

@@ -4,7 +4,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/allappointments')
+        fetch('https://infinite-anchorage-79745.herokuapp.com/allappointments')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -12,7 +12,7 @@ const Orders = () => {
     const handleStatus = (id) => {
         const proceed = window.confirm('book this Slot ?')
         if (proceed) {
-            const url = `http://localhost:5000/allappointments/${id}`;
+            const url = `https://infinite-anchorage-79745.herokuapp.com/allappointments/${id}`;
             fetch(url, {
                 method: "PUT",
             })
@@ -28,7 +28,7 @@ const Orders = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do you want to delete this slot ?')
         if (proceed) {
-            const url = `http://localhost:5000/allappointments/${id}`;
+            const url = `https://infinite-anchorage-79745.herokuapp.com/allappointments/${id}`;
             fetch(url, {
                 method: "DELETE",
             })

@@ -17,7 +17,7 @@ const Makereview = () => {
 
         const myReview = { name, email, review };
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://infinite-anchorage-79745.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

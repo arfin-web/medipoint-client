@@ -8,7 +8,7 @@ const Updateslot = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `http://localhost:5000/appointments/${id}`;
+        const url = `https://infinite-anchorage-79745.herokuapp.com/appointments/${id}`;
 
         fetch(url)
             .then(res => res.json())
@@ -38,7 +38,7 @@ const Updateslot = () => {
 
         const updatedSlot = { name, description, time, image, price, userName, email, userPhone, status };
 
-        fetch(`http://localhost:5000/appointments/${id}`, {
+        fetch(`https://infinite-anchorage-79745.herokuapp.com/appointments/${id}`, {
             method: "PUT",
             headers: {
                 'content-type': "application/json"

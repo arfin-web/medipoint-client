@@ -8,7 +8,7 @@ const Makeadmin = () => {
 
     const handleRole = (e) => {
         const user = { email }
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://infinite-anchorage-79745.herokuapp.com/users/admin', {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

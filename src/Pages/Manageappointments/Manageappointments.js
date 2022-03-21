@@ -5,7 +5,7 @@ const Manageappointments = () => {
     const [appointments, setAppointments] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointments')
+        fetch('https://infinite-anchorage-79745.herokuapp.com/appointments')
             .then(res => res.json())
             .then(data => setAppointments(data))
     }, [])
@@ -13,7 +13,7 @@ const Manageappointments = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do you want to delete this slot ?')
         if (proceed) {
-            const url = `http://localhost:5000/appointments/${id}`;
+            const url = `https://infinite-anchorage-79745.herokuapp.com/appointments/${id}`;
             fetch(url, {
                 method: "DELETE",
             })
